@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .property-item {
+      width: calc(33.333% - 20px);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 400px; /* Fixed height */
+    }
+
+    .property-item:hover {
+      transform: scale(1.05);
+    }
+
+    .img {
+      flex: 1 1 auto;
+      overflow: hidden;
+    }
+
+    .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .property-content {
+      padding: 15px;
+      flex: 0 0 auto;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .text-black-50 {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    .city {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .specs {
+      display: flex;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    .specs span {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn {
+      display: block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: background 0.3s;
+      margin-top: auto; /* Pushes the button to the bottom */
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .property-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .property-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="property-item">
+        <a href="property-single.html" class="img">
+          <img src="our data/mini_may.jpg" alt="Property 1">
+        </a>
+        <div class="property-content">
+          <div class="price mb-2"><span>$1,200,000</span></div>
+          <div>
+            <span class="d-block mb-2 text-black-50">1234 Main Street, Ave. 21</span>
+            <span class="city d-block mb-3">California, USA</span>
+            <div class="specs d-flex mb-4">
+              <span class="caption">3 beds</span>
+              <span class="caption">2 baths</span>
+            </div>
+            <a href="property-single.html" class="btn">See details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-item">
+        <a href="property-single.html" class="img">
+          <img src="our data/navah.jpg" alt="Property 2">
+        </a>
+        <div class="property-content">
+          <div class="price mb-2"><span>$950,000</span></div>
+          <div>
+            <span class="d-block mb-2 text-black-50">5678 Elm Street, Ave. 45</span>
+            <span class="city d-block mb-3">New York, USA</span>
+            <div class="specs d-flex mb-4">
+              <span class="caption">4 beds</span>
+              <span class="caption">3 baths</span>
+            </div>
+            <a href="property-single.html" class="btn">See details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="property-item">
+        <a href="property-single.html" class="img">
+          <img src="images/property3.jpg" alt="Property 3">
+        </a>
+        <div class="property-content">
+          <div class="price mb-2"><span>$800,000</span></div>
+          <div>
+            <span class="d-block mb-2 text-black-50">9101 Oak Street, Ave. 67</span>
+            <span class="city d-block mb-3">Texas, USA</span>
+            <div class="specs d-flex mb-4">
+              <span class="caption">3 beds</span>
+              <span class="caption">2 baths</span>
+            </div>
+            <a href="property-single.html" class="btn">See details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
