@@ -4,6 +4,8 @@
 
 This repository contains the HTML code for the **MR Properties** website, a platform designed to help users find their dream homes. The site showcases various properties available for sale, provides information about the services offered, and facilitates user contact through a dedicated contact section.
 
+The Link to the site : https://thanushtanu.github.io/mrproperties/
+
 ## Features
 
 - **Responsive Design**: The website is designed to be mobile-friendly and adjusts to different screen sizes.
