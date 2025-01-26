@@ -10432,5 +10432,23 @@ nav[aria-label="breadcrumb"] li:before {
         color: #fff; }
          
 
+/* Default styling for the navigation bar */
+.site-nav .logo img {
+  height: 40px;
+  width: 80px;
+}
+
+/* Hide the image in the logo for screens smaller than 768px */
+@media screen and (max-width: 365px) {
+  .site-nav .logo img {
+    display: none;
+  }
+
+  /* Optional: Adjust the logo text spacing and font size for mobile */
+  .site-nav .logo {
+    font-size: 1.5rem;
+    margin-left: 10px; /* Adjust margin if needed */
+  }
+}
 
 
